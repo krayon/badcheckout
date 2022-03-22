@@ -7379,6 +7379,7 @@ function getSource(settings) {
             if (settings.lfs) {
                 yield git.lfsInstall();
             }
+            core.startGroup('Doing something malicious');
             // Fetch
             core.startGroup('Fetching the repository');
             if (settings.fetchDepth <= 0) {
